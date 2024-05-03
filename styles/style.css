@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
+  list-style: none;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,12 +10,14 @@
 
 section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
   background-color: #8B93FF;
   padding: 1rem;
+  gap: 2rem;
 }
 section .canva {
   background-color: white;
@@ -44,7 +47,6 @@ section .canva textarea {
 }
 section .canva uL {
   display: flex;
-  list-style: none;
   align-items: center;
   justify-content: start;
   gap: 1.5rem;
@@ -56,4 +58,68 @@ section .canva uL li {
 }
 section .canva uL li img {
   width: 100%;
+}
+section .canva uL button {
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  background-color: #93b1ed;
+  color: white;
+  border: 3px solid #dcdcdc;
+  border-radius: 20px;
+}
+section .lista-texto-formatado {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 22rem;
+  position: relative;
+}
+section .lista-texto-formatado li {
+  cursor: pointer;
+  border-bottom: 1px solid #93b1ed;
+  padding: 1rem 0;
+  word-wrap: break-word;
+}
+section .lista-texto-formatado .bold {
+  font-weight: bold;
+}
+section .lista-texto-formatado .italic {
+  font-style: italic;
+}
+section .lista-texto-formatado .circle {
+  padding-left: 9px;
+  position: relative;
+}
+section .lista-texto-formatado .circle::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 26px;
+  border-radius: 50%;
+}
+section .lista-texto-formatado .aspas {
+  background-color: #DCDCDC;
+  border-left: #93b1ed 4px solid;
+  padding-left: 1.5rem;
+  position: relative;
+}
+section .lista-texto-formatado .aspas::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  background-image: url("../img/aspa.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section .lista-texto-formatado .selecionado {
+  border: 3px solid #93b1ed;
 }/*# sourceMappingURL=style.css.map */
