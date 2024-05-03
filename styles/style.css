@@ -119,7 +119,7 @@ section .lista-texto-formatado .circle::before {
   border-radius: 50%;
 }
 section .lista-texto-formatado .aspas {
-  background-color: #DCDCDC;
+  background-color: rgba(220, 220, 220, 0.5607843137);
   border-left: #93b1ed 4px solid;
   padding-left: 1.5rem;
   position: relative;
