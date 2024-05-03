@@ -22,6 +22,7 @@ section{
     padding: 1rem;
     gap: 2rem;
     .canva{
+        z-index: 100000;
         background-color: white;
         width: 22rem;
         height: 18rem;
@@ -78,6 +79,9 @@ section{
         border-radius: 20px;
         width: 22rem;
         position: relative;
+        opacity: 0;
+        transform: translateY(-100px);
+        transition: .7s;
         li{
             cursor: pointer;
             border-bottom: 1px solid $azul-claro;
@@ -128,5 +132,9 @@ section{
         .selecionado{
             border: 3px solid $azul-claro;
         }
+    }
+    .lista-visivel{
+        opacity: 1;
+        transform: translateY(0);
     }
 }

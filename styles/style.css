@@ -20,6 +20,7 @@ section {
   gap: 2rem;
 }
 section .canva {
+  z-index: 100000;
   background-color: white;
   width: 22rem;
   height: 18rem;
@@ -74,6 +75,9 @@ section .lista-texto-formatado {
   border-radius: 20px;
   width: 22rem;
   position: relative;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 0.7s;
 }
 section .lista-texto-formatado li {
   cursor: pointer;
@@ -122,4 +126,8 @@ section .lista-texto-formatado .aspas::before {
 }
 section .lista-texto-formatado .selecionado {
   border: 3px solid #93b1ed;
+}
+section .lista-visivel {
+  opacity: 1;
+  transform: translateY(0);
 }/*# sourceMappingURL=style.css.map */

@@ -17,6 +17,7 @@ botaoCopiar.addEventListener('click', ()=>{
 listaDeBotoes.forEach( (botao)=> {    
     botao.onclick = () =>{
         try{
+            lista.classList.add('lista-visivel');
             criarItem(botao.classList[1]);
             textarea.value = '';
 
@@ -30,7 +31,6 @@ listaDeBotoes.forEach( (botao)=> {
 
 function criarItem(classe){
     const textoSelecionado = textarea.value;
-
     if(textoSelecionado == ''){
         throw new Error("Campo de texto vazio!");
     }
@@ -39,3 +39,4 @@ function criarItem(classe){
     li.innerText = `${textoSelecionado}`;
     lista.appendChild(li);
 }
+
